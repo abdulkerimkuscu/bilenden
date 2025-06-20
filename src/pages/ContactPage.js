@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({})
+//  const [formData, setFormData] = useState({})
 
   return <div>İletişim</div>
 }
