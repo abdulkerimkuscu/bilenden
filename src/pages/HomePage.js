@@ -12,15 +12,7 @@ const HomePage = () => {
       <WhyChooseUs />
 
       {/* Navigation Links */}
-      <nav className="bg-gray-800 text-white py-4">
-        <div className="container mx-auto px-4">
-          <Link to="/" className="hover:underline px-4">Anasayfa</Link>
-          <Link to="/hakkimizda" className="hover:underline px-4">Hakkımızda</Link>
-          <Link to="/uzmanlar" className="hover:underline px-4">Uzmanlar</Link>
-          <Link to="/iletisim" className="hover:underline px-4">İletişim</Link>
-          <Link to="/talep-formu" className="hover:underline px-4">Talep Formu</Link>
-        </div>
-      </nav>
+    
 
       {/* CTA Section */}
       <section className="bg-blue-600 text-white py-16">
