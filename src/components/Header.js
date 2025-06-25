@@ -1,23 +1,42 @@
-"use client"
-
-import { useState } from "react"
+import logo from "../assets/logo.png"
+import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const isActive = (path) => {
     return location.pathname === path || (path === "/" && location.pathname === "/anasayfa")
   }
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/50 backdrop-blur-md shadow-md" // transparanlık %50'ye çıkarıldı
+          : "bg-white shadow-lg"
+      }`}
+    >
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2 md:py-2">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-blue-600">
-            Bilenden
+          <Link to="/" className="flex items-center">
+            <img
+              src={logo}
+              alt="Bilenden Logo"
+              className="h-10 w-auto md:h-12 transition-all duration-300"
+              style={{ objectFit: "contain" }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
