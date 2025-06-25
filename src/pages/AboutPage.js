@@ -8,7 +8,7 @@ const AboutPage = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-800 mb-6">Hakkımızda</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Bilenden olarak, Türkiye'de bilirkişi raporu ve uzman danışmanlık hizmetleri alanında öncü bir platform
+            Bilenden olarak, Türkiye'de uzman görüşü ve danışmanlık hizmetleri alanında öncü bir platform
             olmayı hedefliyoruz.
           </p>
         </div>
@@ -25,7 +25,7 @@ const AboutPage = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-blue-600 mb-4">Vizyonumuz</h2>
             <p className="text-gray-600 leading-relaxed">
-              Türkiye'nin en güvenilir ve kapsamlı bilirkişi raporu platformu olarak, teknoloji ve uzmanlığı
+              Türkiye'nin en güvenilir ve kapsamlı uzman görüşü raporu platformu olarak, teknoloji ve uzmanlığı
               birleştirerek sektörde standartları belirleyen lider kuruluş olmak.
             </p>
           </div>
@@ -38,7 +38,7 @@ const AboutPage = () => {
             <p className="text-gray-600 leading-relaxed mb-4">
               Bilenden, hukuki süreçlerde ihtiyaç duyulan uzman görüşlerinin kaliteli ve hızlı bir şekilde temin
               edilmesi amacıyla kurulmuştur. Sektördeki deneyimli uzmanların bir araya gelmesiyle oluşan platformumuz,
-              çeşitli alanlarda bilirkişilik hizmeti sunmaktadır.
+              çeşitli alanlarda danışmanlık hizmeti sunmaktadır.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               Trafik kazası analizlerinden aktüeryal değerlendirmelere, kusur tespit raporlarından mühendislik

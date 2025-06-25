@@ -81,7 +81,7 @@ const ServicesSection = () => {
     {
       id: 6,
       title: "Diğer Uzmanlık Alanları",
-      description: "Özel durumlar ve diğer teknik konularda uzman bilirkişi raporu hizmetleri.",
+      description: "Özel durumlar ve diğer teknik konularda uzman uzman görüşü hizmetleri.",
       icon: (
         <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path

@@ -99,7 +99,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Neden Bilenden?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Bilirkişi raporu ihtiyaçlarınızda bizi tercih etmeniz için birçok önemli avantajımız bulunmaktadır.
+            Uzman görüşü ihtiyaçlarınızda bizi tercih etmeniz için birçok önemli avantajımız bulunmaktadır.
           </p>
         </div>
 
@@ -117,27 +117,6 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-16 bg-blue-600 text-white rounded-lg p-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2">500+</div>
-              <div className="text-blue-200">Tamamlanan Rapor</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-blue-200">Uzman Bilirkişi</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">15+</div>
-              <div className="text-blue-200">Yıl Deneyim</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">%98</div>
-              <div className="text-blue-200">Müşteri Memnuniyeti</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

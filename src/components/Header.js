@@ -53,7 +53,7 @@ const Header = () => {
             to="/talep-formu"
             className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Bilirkişi Raporu Talep Et
+            Uzman Görüşü Talep Et
           </Link>
 
           {/* Mobile Menu Button */}
@@ -101,7 +101,7 @@ const Header = () => {
                 className="py-2 bg-blue-600 text-white px-4 rounded-lg text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Bilirkişi Raporu Talep Et
+                Uzman Görüşü Talep Et
               </Link>
             </nav>
           </div>
