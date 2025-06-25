@@ -6,7 +6,7 @@ const faydalar = [
 		desc: "Mahkemeye veya taraflara, dava konusu teknik veya bilimsel konularda açıklık getirir.",
 		icon: (
 			<svg
-				className="w-8 h-8 mx-auto mb-2 text-gray-400"
+				className="w-8 h-8 mx-auto mb-2 text-[#e57373]"
 				fill="none"
 				stroke="currentColor"
 				viewBox="0 0 24 24"
@@ -25,7 +25,7 @@ const faydalar = [
 		desc: "Taraflarca sunulan uzman görüşleri, mahkemede delil olarak değerlendirilebilir.",
 		icon: (
 			<svg
-				className="w-8 h-8 mx-auto mb-2 text-gray-400"
+				className="w-8 h-8 mx-auto mb-2 text-[#e57373]"
 				fill="none"
 				stroke="currentColor"
 				viewBox="0 0 24 24"
@@ -44,7 +44,7 @@ const faydalar = [
 		desc: "Teknik konularda hızlı ve güvenilir bilgi sunarak sürecin daha etkin ilerlemesini sağlar.",
 		icon: (
 			<svg
-				className="w-8 h-8 mx-auto mb-2 text-gray-400"
+				className="w-8 h-8 mx-auto mb-2 text-[#e57373]"
 				fill="none"
 				stroke="currentColor"
 				viewBox="0 0 24 24"
@@ -62,8 +62,7 @@ const faydalar = [
 		title: "Objektif ve Bilimsel Yaklaşım",
 		desc: "Alanında uzman kişiler tarafından hazırlandığı için tarafsız ve bilimsel bir değerlendirme sunar.",
 		icon: (
-			// Atom simgesi (görseldeki gibi)
-			<svg className="w-8 h-8 mx-auto mb-2 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 64 64">
+			<svg className="w-8 h-8 mx-auto mb-2 text-[#e57373]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 64 64">
 				<ellipse cx="32" cy="32" rx="24" ry="10" />
 				<ellipse cx="32" cy="32" rx="10" ry="24" />
 				<ellipse cx="32" cy="32" rx="20" ry="8" transform="rotate(45 32 32)" />
@@ -78,7 +77,7 @@ const faydalar = [
 		icon: (
 			// Artı simgesi
 			<svg
-				className="w-8 h-8 mx-auto mb-2 text-gray-400"
+				className="w-8 h-8 mx-auto mb-2 text-[#e57373]"
 				fill="none"
 				stroke="currentColor"
 				viewBox="0 0 24 24"
@@ -92,74 +91,72 @@ const faydalar = [
 
 const ServicesSection = () => {
 	return (
-		<section className="py-10 bg-gray-50">
-			<div className="w-full bg-white px-0 mx-0">
-				<div className="container mx-auto px-4 py-8">
-					<div className="flex flex-col md:flex-row gap-0 max-w-6xl mx-auto">
-						{/* 1. Parça */}
-						<div className="flex-1 flex flex-col justify-center items-center px-6 py-8 border-b md:border-b-0 md:border-r border-gray-200">
-							<h3 className="text-lg font-semibold text-blue-700 mb-3 text-center">
-								Uzman Görüşü Nedir?
-							</h3>
-							<p className="text-sm text-gray-700 text-center">
-								Uzman görüşü, teknik veya özel bilgi gerektiren konularda mahkemeler,
-								savcılıklar veya taraflarca alınan, alanında uzman kişiler tarafından
-								hazırlanan bilimsel ve objektif değerlendirme raporudur.
-							</p>
-						</div>
-						{/* 2. Parça */}
-						<div className="flex-1 flex flex-col justify-center items-center px-6 py-8 border-b md:border-b-0 md:border-r border-gray-200">
-							<h3 className="text-lg font-semibold text-blue-700 mb-3 text-center">
-								Türk Hukuk Sisteminde Uzman Görüşünün Yeri
-							</h3>
-							<p className="text-sm text-gray-700 text-center">
-								Türk hukukunda, özellikle Hukuk Muhakemeleri Kanunu’nun 293. maddesi
-								uyarınca, taraflar dava sürecinde kendi seçtikleri uzmanlardan görüş
-								alabilir ve bu görüşleri mahkemeye sunabilirler. Uzman görüşü,
-								bilirkişi raporundan farklı olarak tarafların delil olarak sunduğu,
-								teknik ve bilimsel açıklamalar içeren bir değerlendirmedir. Mahkemeler,
-								uzman görüşünü dikkate almak zorunda olmamakla birlikte, kararlarını
-								gerekçelendirirken bu görüşlerden yararlanabilirler.
-							</p>
-						</div>
-						{/* 3. Parça */}
-						<div className="flex-1 flex flex-col justify-center items-center px-6 py-8">
-							<h3 className="text-lg font-semibold text-blue-700 mb-4 text-center">
-								Uzman Görüşünün Faydaları Nelerdir?
-							</h3>
-							<div className="flex flex-col gap-3 w-full">
-								{faydalar.map((fayda, i) => (
-									<div
-										key={i}
-										className="flex items-center gap-3 bg-gray-100 rounded p-2 w-full"
-									>
-										<div>{fayda.icon}</div>
-										<div className="text-left">
-											<div className="font-semibold text-sm text-gray-800">
-												{fayda.title}
-											</div>
-											<div className="text-xs text-gray-600">
-												{fayda.desc}
-											</div>
+		<section className="bg-[#232323] text-[#4ecb8f]">
+			<div className="container mx-auto px-4 py-8">
+				<div className="flex flex-col md:flex-row gap-0 max-w-6xl mx-auto">
+					{/* 1. Parça */}
+					<div className="flex-1 flex flex-col justify-center items-center px-6 py-8 bg-white bg-opacity-20 rounded-lg m-2 text-center">
+						<h3 className="text-lg font-semibold text-[#f87171] mb-3">
+							Uzman Görüşü Nedir?
+						</h3>
+						<p className="text-sm">
+							Uzman görüşü, teknik veya özel bilgi gerektiren konularda mahkemeler,
+							savcılıklar veya taraflarca alınan, alanında uzman kişiler tarafından
+							hazırlanan bilimsel ve objektif değerlendirme raporudur.
+						</p>
+					</div>
+					{/* 2. Parça */}
+					<div className="flex-1 flex flex-col justify-center items-center px-6 py-8 bg-white bg-opacity-20 rounded-lg m-2 text-center">
+						<h3 className="text-lg font-semibold text-[#f87171] mb-3">
+							Türk Hukuk Sisteminde Uzman Görüşünün Yeri
+						</h3>
+						<p className="text-sm">
+							Türk hukukunda, özellikle Hukuk Muhakemeleri Kanunu’nın 293. maddesi
+							uyarınca, taraflar dava sürecinde kendi seçtikleri uzmanlardan görüş
+							alabilir ve bu görüşleri mahkemeye sunabilirler. Uzman görüşü,
+							bilirkişi raporundan farklı olarak tarafların delil olarak sunduğu,
+							teknik ve bilimsel açıklamalar içeren bir değerlendirmedir. Mahkemeler,
+							uzman görüşünü dikkate almak zorunda olmamakla birlikte, kararlarını
+							gerekçelendirirken bu görüşlerden yararlanabilirler.
+						</p>
+					</div>
+					{/* 3. Parça */}
+					<div className="flex-1 flex flex-col justify-center items-center px-6 py-8 bg-white bg-opacity-20 rounded-lg m-2 text-center">
+						<h3 className="text-lg font-semibold text-[#f87171] mb-4">
+							Uzman Görüşünün Faydaları Nelerdir?
+						</h3>
+						<div className="flex flex-col gap-3 w-full">
+							{faydalar.map((fayda, i) => (
+								<div
+									key={i}
+									className="flex items-center gap-3 rounded p-2 w-full"
+								>
+									<div>{fayda.icon}</div>
+									<div className="text-left">
+										<div className="font-semibold text-sm text-[#f87171]">
+											{fayda.title}
+										</div>
+										<div className="text-xs ">
+											{fayda.desc}
 										</div>
 									</div>
-								))}
-							</div>
+								</div>
+							))}
 						</div>
 					</div>
-					{/* CTA */}
-					<div className="text-center mt-8">
-						<h4 className="text-base font-semibold text-gray-800 mb-3">
-							Siz de uzman görüşü almak veya detaylı bilgi edinmek için bizimle
-							iletişime geçebilirsiniz.
-						</h4>
-						<a
-							href="/iletisim"
-							className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors inline-block text-sm"
-						>
-							İletişim Formu
-						</a>
-					</div>
+				</div>
+				{/* CTA */}
+				<div className="text-center mt-8">
+					<h4 className="text-base font-semibold text-[#4ecb8f] mb-3">
+						Siz de uzman görüşü almak veya detaylı bilgi edinmek için bizimle
+						iletişime geçebilirsiniz.
+					</h4>
+					<a
+						href="/iletisim"
+						className="bg-[#4ecb8f] text-[#232323] px-6 py-2 rounded-lg hover:bg-[#38b27e] transition-colors inline-block text-sm font-semibold"
+					>
+						İletişim Formu
+					</a>
 				</div>
 			</div>
 		</section>

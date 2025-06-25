@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
       title: "Deneyimli Uzman Kadro",
       description: "Alanında 10+ yıl deneyime sahip, sertifikalı ve güvenilir uzmanlardan oluşan kadromuz.",
       icon: (
-        <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-16 h-16 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
       title: "Hızlı Teslimat",
       description: "Acil durumlarınızda 2-3 iş günü, normal süreçlerde 5-10 iş günü içinde rapor teslimi.",
       icon: (
-        <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-16 h-16 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
       title: "Detaylı Analiz",
       description: "Her raporda kapsamlı analiz, görsel destekli açıklamalar ve teknik detaylar.",
       icon: (
-        <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-16 h-16 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
       title: "Güvenilir Hizmet",
       description: "Objektif değerlendirme, bilimsel yöntemler ve etik ilkeler doğrultusunda hizmet.",
       icon: (
-        <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-16 h-16 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
       title: "Uygun Fiyat",
       description: "Kaliteli hizmeti uygun fiyatlarla sunuyoruz. Şeffaf fiyatlandırma politikası.",
       icon: (
-        <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-16 h-16 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -80,7 +80,7 @@ const WhyChooseUs = () => {
       title: "7/24 Destek",
       description: "Süreç boyunca kesintisiz iletişim ve destek. Sorularınızı yanıtlamaya hazırız.",
       icon: (
-        <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-16 h-16 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -93,12 +93,12 @@ const WhyChooseUs = () => {
   ]
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-[#232323] text-[#4ecb8f]">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Neden Bilenden?</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#4ecb8f] mb-6">Neden Bilenden?</h2>
+          <p className="text-xl text-[#a7f3d0] max-w-3xl mx-auto">
             Uzman görüşü ihtiyaçlarınızda bizi tercih etmeniz için birçok önemli avantajımız bulunmaktadır.
           </p>
         </div>
@@ -108,11 +108,11 @@ const WhyChooseUs = () => {
           {advantages.map((advantage) => (
             <div
               key={advantage.id}
-              className="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="text-center p-6 bg-white bg-opacity-20 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="flex justify-center mb-4">{advantage.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">{advantage.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{advantage.description}</p>
+              <h3 className="text-xl font-semibold text-[#4ecb8f] mb-4">{advantage.title}</h3>
+              <p className="text-[#a7f3d0] leading-relaxed">{advantage.description}</p>
             </div>
           ))}
         </div>

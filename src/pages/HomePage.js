@@ -6,16 +6,13 @@ import WhyChooseUs from "../components/WhyChooseUs"
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="bg-[#232323] text-[#4ecb8f] min-h-screen">
       <HeroSection />
       <ServicesSection />
       <WhyChooseUs />
 
-      {/* Navigation Links */}
-    
-
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-[#232323] text-[#4ecb8f] py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Uzman Bilirkişi Raporu İhtiyacınız mı Var?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -23,7 +20,7 @@ const HomePage = () => {
           </p>
           <Link
             to="/talep-formu"
-            className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+            className="bg-[#4ecb8f] text-[#232323] px-8 py-3 rounded-lg font-semibold hover:bg-[#38b27e] transition-colors inline-block"
           >
             Hemen Talep Oluştur
           </Link>

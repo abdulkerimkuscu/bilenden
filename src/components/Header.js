@@ -24,8 +24,8 @@ const Header = () => {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/50 backdrop-blur-md shadow-md" // transparanlık %50'ye çıkarıldı
-          : "bg-white shadow-lg"
+          ? "bg-[#232323]/90 backdrop-blur-md shadow-md"
+          : "bg-[#232323] shadow-lg"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -35,7 +35,7 @@ const Header = () => {
             <img
               src={bilendenLogo}
               alt="Bilenden Logo"
-              className="h-12 w-[180px] transition-all duration-300" // width artırıldı
+              className="h-12 w-[180px] transition-all duration-300"
               style={{ objectFit: "contain" }}
             />
           </Link>
@@ -44,25 +44,41 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8">
             <Link
               to="/anasayfa"
-              className={`hover:text-blue-600 transition-colors ${isActive("/anasayfa") || isActive("/") ? "text-blue-600 font-semibold" : "text-gray-700"}`}
+              className={`transition-colors ${
+                isActive("/anasayfa") || isActive("/")
+                  ? "text-[#f87171] font-semibold"
+                  : "text-[#4ecb8f] hover:text-[#f87171]"
+              }`}
             >
               Ana Sayfa
             </Link>
             <Link
               to="/alanlarimiz"
-              className={`hover:text-blue-600 transition-colors ${isActive("/alanlarimiz") ? "text-blue-600 font-semibold" : "text-gray-700"}`}
+              className={`transition-colors ${
+                isActive("/alanlarimiz")
+                  ? "text-[#f87171] font-semibold"
+                  : "text-[#4ecb8f] hover:text-[#f87171]"
+              }`}
             >
               Alanlarımız
             </Link>
             <Link
               to="/hakkimizda"
-              className={`hover:text-blue-600 transition-colors ${isActive("/hakkimizda") ? "text-blue-600 font-semibold" : "text-gray-700"}`}
+              className={`transition-colors ${
+                isActive("/hakkimizda")
+                  ? "text-[#f87171] font-semibold"
+                  : "text-[#4ecb8f] hover:text-[#f87171]"
+              }`}
             >
               Hakkımızda
             </Link>
             <Link
               to="/iletisim"
-              className={`hover:text-blue-600 transition-colors ${isActive("/iletisim") ? "text-blue-600 font-semibold" : "text-gray-700"}`}
+              className={`transition-colors ${
+                isActive("/iletisim")
+                  ? "text-[#f87171] font-semibold"
+                  : "text-[#4ecb8f] hover:text-[#f87171]"
+              }`}
             >
               İletişim
             </Link>
@@ -71,14 +87,14 @@ const Header = () => {
           {/* CTA Button */}
           <Link
             to="/talep-formu"
-            className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            className="hidden md:block bg-[#4ecb8f] text-[#232323] px-6 py-2 rounded-lg hover:bg-[#38b27e] transition-colors font-semibold"
           >
             Uzman Görüşü Talep Et
           </Link>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="#4ecb8f" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -90,35 +106,51 @@ const Header = () => {
             <nav className="flex flex-col space-y-2">
               <Link
                 to="/anasayfa"
-                className="py-2 hover:text-blue-600"
+                className={`py-2 transition-colors ${
+                  isActive("/anasayfa") || isActive("/")
+                    ? "text-[#f87171] font-semibold"
+                    : "text-[#4ecb8f] hover:text-[#f87171]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Ana Sayfa
               </Link>
               <Link
                 to="/alanlarimiz"
-                className="py-2 hover:text-blue-600"
+                className={`py-2 transition-colors ${
+                  isActive("/alanlarimiz")
+                    ? "text-[#f87171] font-semibold"
+                    : "text-[#4ecb8f] hover:text-[#f87171]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Alanlarımız
               </Link>
               <Link
                 to="/hakkimizda"
-                className="py-2 hover:text-blue-600"
+                className={`py-2 transition-colors ${
+                  isActive("/hakkimizda")
+                    ? "text-[#f87171] font-semibold"
+                    : "text-[#4ecb8f] hover:text-[#f87171]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Hakkımızda
               </Link>
               <Link
                 to="/iletisim"
-                className="py-2 hover:text-blue-600"
+                className={`py-2 transition-colors ${
+                  isActive("/iletisim")
+                    ? "text-[#f87171] font-semibold"
+                    : "text-[#4ecb8f] hover:text-[#f87171]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 İletişim
               </Link>
               <Link
                 to="/talep-formu"
-                className="py-2 bg-blue-600 text-white px-4 rounded-lg text-center"
+                className="py-2 bg-[#4ecb8f] text-[#232323] px-4 rounded-lg text-center font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Uzman Görüşü Talep Et
