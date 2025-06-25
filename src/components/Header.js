@@ -29,16 +29,16 @@ const Header = () => {
               Ana Sayfa
             </Link>
             <Link
+              to="/alanlarimiz"
+              className={`hover:text-blue-600 transition-colors ${isActive("/alanlarimiz") ? "text-blue-600 font-semibold" : "text-gray-700"}`}
+            >
+              Alanlarımız
+            </Link>
+            <Link
               to="/hakkimizda"
               className={`hover:text-blue-600 transition-colors ${isActive("/hakkimizda") ? "text-blue-600 font-semibold" : "text-gray-700"}`}
             >
               Hakkımızda
-            </Link>
-            <Link
-              to="/uzmanlar"
-              className={`hover:text-blue-600 transition-colors ${isActive("/uzmanlar") ? "text-blue-600 font-semibold" : "text-gray-700"}`}
-            >
-              Uzmanlarımız
             </Link>
             <Link
               to="/iletisim"
@@ -68,19 +68,39 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <nav className="flex flex-col space-y-2">
-              <Link to="/anasayfa" className="py-2 hover:text-blue-600">
+              <Link
+                to="/anasayfa"
+                className="py-2 hover:text-blue-600"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Ana Sayfa
               </Link>
-              <Link to="/hakkimizda" className="py-2 hover:text-blue-600">
+              <Link
+                to="/alanlarimiz"
+                className="py-2 hover:text-blue-600"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Alanlarımız
+              </Link>
+              <Link
+                to="/hakkimizda"
+                className="py-2 hover:text-blue-600"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Hakkımızda
               </Link>
-              <Link to="/uzmanlar" className="py-2 hover:text-blue-600">
-                Uzmanlarımız
-              </Link>
-              <Link to="/iletisim" className="py-2 hover:text-blue-600">
+              <Link
+                to="/iletisim"
+                className="py-2 hover:text-blue-600"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 İletişim
               </Link>
-              <Link to="/talep-formu" className="py-2 bg-blue-600 text-white px-4 rounded-lg text-center">
+              <Link
+                to="/talep-formu"
+                className="py-2 bg-blue-600 text-white px-4 rounded-lg text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Bilirkişi Raporu Talep Et
               </Link>
             </nav>

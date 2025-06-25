@@ -110,7 +110,10 @@ const ServicesSection = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div
+              key={service.id}
+              className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow flex flex-col h-full"
+            >
               <div className="flex items-center mb-4">
                 {service.icon}
                 <h3 className="text-xl font-semibold text-gray-800 ml-4">{service.title}</h3>
@@ -137,12 +140,14 @@ const ServicesSection = () => {
                 </ul>
               </div>
 
-              <Link
-                to="/talep-formu"
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors text-center block"
-              >
-                Rapor Talep Et
-              </Link>
+              <div className="mt-auto">
+                <Link
+                  to="/talep-formu"
+                  className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+                >
+                  Rapor Talep Et
+                </Link>
+              </div>
             </div>
           ))}
         </div>

@@ -3,9 +3,9 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
-import ExpertsPage from "./pages/ExpertsPage"
 import ContactPage from "./pages/ContactPage"
 import RequestFormPage from "./pages/RequestFormPage"
+import OurAreasPage from "./pages/OurAreasPage"
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/anasayfa" element={<HomePage />} />
             <Route path="/hakkimizda" element={<AboutPage />} />
-            <Route path="/uzmanlar" element={<ExpertsPage />} />
+            <Route path="/alanlarimiz" element={<OurAreasPage />} />
             <Route path="/iletisim" element={<ContactPage />} />
             <Route path="/talep-formu" element={<RequestFormPage />} />
           </Routes>
