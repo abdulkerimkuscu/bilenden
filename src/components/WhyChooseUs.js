@@ -97,7 +97,7 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4ecb8f] mb-6">Neden Bilenden?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#f87171] mb-6">Neden Bilenden?</h2>
           <p className="text-xl text-[#a7f3d0] max-w-3xl mx-auto">
             Uzman görüşü ihtiyaçlarınızda bizi tercih etmeniz için birçok önemli avantajımız bulunmaktadır.
           </p>

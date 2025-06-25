@@ -2,12 +2,12 @@ import React from "react"
 
 const AboutPage = () => {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#232323] text-[#4ecb8f] min-h-screen">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-800 mb-6">Hakkımızda</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-[#f87171] mb-6">Hakkımızda</h1>
+          <p className="text-xl text-[#a7f3d0] max-w-3xl mx-auto">
             Bilenden olarak, Türkiye'de uzman görüşü ve danışmanlık hizmetleri alanında öncü bir platform
             olmayı hedefliyoruz.
           </p>
@@ -15,16 +15,16 @@ const AboutPage = () => {
 
         {/* Mission & Vision */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-blue-600 mb-4">Misyonumuz</h2>
-            <p className="text-gray-600 leading-relaxed">
+          <div className="bg-white bg-opacity-20 p-8 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold text-[#f87171] mb-4">Misyonumuz</h2>
+            <p className="text-[#a7f3d0] leading-relaxed">
               Adalet sisteminin vazgeçilmez bir parçası olan bilirkişilik hizmetlerini en yüksek kalite standartlarında
               sunarak, hukuki süreçlerde doğru ve objektif değerlendirmeler yapılmasına katkı sağlamak.
             </p>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-blue-600 mb-4">Vizyonumuz</h2>
-            <p className="text-gray-600 leading-relaxed">
+          <div className="bg-white bg-opacity-20 p-8 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold text-[#f87171] mb-4">Vizyonumuz</h2>
+            <p className="text-[#a7f3d0] leading-relaxed">
               Türkiye'nin en güvenilir ve kapsamlı uzman görüşü raporu platformu olarak, teknoloji ve uzmanlığı
               birleştirerek sektörde standartları belirleyen lider kuruluş olmak.
             </p>
@@ -32,19 +32,19 @@ const AboutPage = () => {
         </div>
 
         {/* Our Story */}
-        <div className="bg-gray-50 p-8 rounded-lg mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Hikayemiz</h2>
+        <div className="bg-white bg-opacity-10 p-8 rounded-lg mb-16">
+          <h2 className="text-3xl font-bold text-[#f87171] mb-6 text-center">Hikayemiz</h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-[#a7f3d0] leading-relaxed mb-4">
               Bilenden, hukuki süreçlerde ihtiyaç duyulan uzman görüşlerinin kaliteli ve hızlı bir şekilde temin
               edilmesi amacıyla kurulmuştur. Sektördeki deneyimli uzmanların bir araya gelmesiyle oluşan platformumuz,
               çeşitli alanlarda danışmanlık hizmeti sunmaktadır.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-[#a7f3d0] leading-relaxed mb-4">
               Trafik kazası analizlerinden aktüeryal değerlendirmelere, kusur tespit raporlarından mühendislik
               analizlerine kadar geniş bir yelpazede hizmet veren uzman kadromuz, her projeye titizlikle yaklaşmaktadır.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-[#a7f3d0] leading-relaxed">
               Teknoloji altyapımız ve deneyimli uzman kadromuzla, müşterilerimize en kaliteli hizmeti sunmayı ve adalet
               sistemine katkı sağlamayı sürdürüyoruz.
             </p>
@@ -53,11 +53,11 @@ const AboutPage = () => {
 
         {/* Values */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">Değerlerimiz</h2>
+          <h2 className="text-3xl font-bold text-[#f87171] mb-12 text-center">Değerlerimiz</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -66,25 +66,25 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Güvenilirlik</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-[#4ecb8f]">Güvenilirlik</h3>
+              <p className="text-[#a7f3d0]">
                 Her raporda objektiflik ve doğruluk ilkesini benimser, güvenilir sonuçlar sunarız.
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Hızlı Hizmet</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-[#4ecb8f]">Hızlı Hizmet</h3>
+              <p className="text-[#a7f3d0]">
                 Zamanın kritik olduğu hukuki süreçlerde, hızlı ve kaliteli hizmet anlayışımızla yanınızdayız.
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-[#f87171]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -93,8 +93,8 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Uzmanlık</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-[#4ecb8f]">Uzmanlık</h3>
+              <p className="text-[#a7f3d0]">
                 Alanında uzman, deneyimli ve sertifikalı bilirkişilerle çalışarak kaliteyi garanti ederiz.
               </p>
             </div>

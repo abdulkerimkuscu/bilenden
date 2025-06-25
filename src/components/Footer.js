@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Şirket Bilgisi ve Sosyal Medya */}
           <div className="flex flex-col justify-between">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-[#4ecb8f]">Bilenden</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#f87171]">Bilenden</h3>
               <p className="mb-4">
                 Türkiye'nin önde gelen bilirkişi raporu ve uzman danışmanlık platformu. Trafik kazası analizleri, kusur tespit raporları ve aktüeryal değerlendirmeler konularında profesyonel hizmet sunuyoruz.
               </p>
@@ -35,7 +35,7 @@ const Footer = () => {
           {/* İletişim - Sağda */}
           <div className="md:col-span-2 flex md:justify-end">
             <div>
-              <h4 className="text-lg font-semibold mb-4 text-[#4ecb8f]">İletişim</h4>
+              <h4 className="text-lg font-semibold mb-4 text-[#f87171]">İletişim</h4>
               <ul className="space-y-2 text-[#4ecb8f]">
                 <li>
                   <span className="block">Telefon: <a href="tel:+905551112233" className="hover:text-[#f87171]">+90 555 111 22 33</a></span>
