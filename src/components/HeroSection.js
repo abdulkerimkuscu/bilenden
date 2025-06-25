@@ -23,10 +23,10 @@ const HeroSection = () => {
                 Bilirkişi Raporu Talep Et
               </Link>
               <Link
-                to="/uzmanlar"
+                to="/alanlarimiz"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
               >
-                Uzmanlarımızı İncele
+                Alanlarımız
               </Link>
             </div>
           </div>
