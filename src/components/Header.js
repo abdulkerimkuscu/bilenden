@@ -1,4 +1,5 @@
-import logo from "../assets/logo.png"
+import bilendenLogo from "../assets/logo2.png"
+//import bilendenLogo from "../assets/bilenden-logo.png" // yeni logonuzu assets klasörüne ekleyin
 import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 
@@ -32,9 +33,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src={logo}
+              src={bilendenLogo}
               alt="Bilenden Logo"
-              className="h-10 w-auto md:h-12 transition-all duration-300"
+              className="h-12 w-[180px] transition-all duration-300" // width artırıldı
               style={{ objectFit: "contain" }}
             />
           </Link>
